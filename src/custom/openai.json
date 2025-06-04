@@ -1,0 +1,38 @@
+{
+    "model": "o4-mini",
+    "functions": [
+        {
+            "name": "generate_prompts",
+            "description": "Generates prompts consisting of a personality trait, a hobby, and an object/animal/fruit/season/weapon",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "personality_trait": {
+                        "type": "string"
+                    },
+                    "hobby": {
+                        "type": "string"
+                    },
+                    "object": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "personality_trait",
+                    "hobby",
+                    "object"
+                ]
+            }
+        }
+    ],
+    "function_call": {
+        "name": "generate_prompts"
+    },
+    "messages": [
+        {
+            "role": "user",
+            "content": "Generate a prompt. The following have already been used, do not use them:\n<USED_PROMPTS>\nChoose only unused answers. Answers can be multi-worded personality traits, hobbies, and things. Use wildly different answers. This will be used for a drawing game."
+        }
+    ],
+    "reasoning_effort": "low"
+}

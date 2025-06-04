@@ -1,3 +1,6 @@
 {
-    "help": "Dit is de helptekst."
+    "prompt_error": "Kon geen prompt genereren. Probeer het later opnieuw.",
+    "trait": "Eigenschap",
+    "hobby": "Hobby",
+    "object": "Object"
 }

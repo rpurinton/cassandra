@@ -1,3 +1,6 @@
 {
-    "help": "Ez a súgószöveg."
+    "prompt_error": "Nepodařilo se vygenerovat prompt. Zkuste to prosím později.",
+    "trait": "Vlastnost",
+    "hobby": "Koníček",
+    "object": "Předmět"
 }

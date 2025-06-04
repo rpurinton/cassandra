@@ -1,3 +1,6 @@
 {
-    "help": "Tai yra pagalbos tekstas."
+    "prompt_error": "Nepavyko sugeneruoti užklausos. Bandykite dar kartą vėliau.",
+    "trait": "Savybė",
+    "hobby": "Pomėgis",
+    "object": "Objektas"
 }

@@ -1,3 +1,6 @@
 {
-    "help": "Bu yardım metnidir."
+    "prompt_error": "İpucu oluşturulamadı. Lütfen daha sonra tekrar deneyin.",
+    "trait": "Özellik",
+    "hobby": "Hobi",
+    "object": "Nesne"
 }

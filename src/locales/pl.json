@@ -1,3 +1,6 @@
 {
-    "help": "To jest tekst pomocy."
+    "prompt_error": "Nie udało się wygenerować podpowiedzi. Spróbuj ponownie później.",
+    "trait": "Cechą",
+    "hobby": "Hobby",
+    "object": "Obiekt"
 }

@@ -1,3 +1,6 @@
 {
-    "help": "Dies ist der Hilfetext."
+    "prompt_error": "Prompt konnte nicht generiert werden. Bitte versuchen Sie es später erneut.",
+    "trait": "Eigenschaft",
+    "hobby": "Hobby",
+    "object": "Objekt"
 }

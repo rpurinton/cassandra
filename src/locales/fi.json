@@ -1,3 +1,6 @@
 {
-    "help": "Tämä on ohjeteksti."
+    "prompt_error": "Kehoa ei voitu luoda. Yritä myöhemmin uudelleen.",
+    "trait": "Piirre",
+    "hobby": "Harrastus",
+    "object": "Esine"
 }

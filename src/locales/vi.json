@@ -1,3 +1,6 @@
 {
-    "help": "Đây là văn bản trợ giúp."
+    "prompt_error": "Không thể tạo gợi ý. Vui lòng thử lại sau.",
+    "trait": "Tính cách",
+    "hobby": "Sở thích",
+    "object": "Đồ vật"
 }

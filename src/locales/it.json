@@ -1,3 +1,6 @@
 {
-    "help": "Questo è il testo di aiuto."
+    "prompt_error": "Impossibile generare un prompt. Riprova più tardi.",
+    "trait": "Caratteristica",
+    "hobby": "Hobby",
+    "object": "Oggetto"
 }

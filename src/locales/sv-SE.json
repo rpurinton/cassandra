@@ -1,3 +1,6 @@
 {
-    "help": "Detta är hjälpinformationen."
+    "prompt_error": "Kunde inte generera en prompt. Försök igen senare.",
+    "trait": "Egenskap",
+    "hobby": "Hobby",
+    "object": "Föremål"
 }

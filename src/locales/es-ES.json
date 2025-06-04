@@ -1,3 +1,6 @@
 {
-    "help": "Este es el texto de ayuda."
+    "prompt_error": "No se pudo generar un mensaje. Por favor, inténtalo de nuevo más tarde.",
+    "trait": "Rasgo",
+    "hobby": "Afición",
+    "object": "Objeto"
 }

@@ -1,3 +1,6 @@
 {
-    "help": "Ez a súgószöveg."
+    "prompt_error": "Nem sikerült generálni a promptot. Kérjük, próbálja meg később.",
+    "trait": "Tulajdonság",
+    "hobby": "Hobbi",
+    "object": "Tárgy"
 }

@@ -1,3 +1,6 @@
 {
-    "help": "This is the help text."
+    "prompt_error": "Failed to generate a prompt. Please try again later.",
+    "trait": "Trait",
+    "hobby": "Hobby",
+    "object": "Object"
 }

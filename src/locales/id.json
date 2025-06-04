@@ -1,3 +1,6 @@
 {
-    "help": "Ini adalah teks bantuan."
+    "prompt_error": "Gagal membuat prompt. Silakan coba lagi nanti.",
+    "trait": "Sifat",
+    "hobby": "Hobi",
+    "object": "Objek"
 }

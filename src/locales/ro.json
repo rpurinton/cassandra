@@ -1,3 +1,6 @@
 {
-    "help": "Aceasta este descrierea de ajutor."
+    "prompt_error": "Nu s-a putut genera un prompt. Vă rugăm să încercați din nou mai târziu.",
+    "trait": "Trăsătură",
+    "hobby": "Hobby",
+    "object": "Obiect"
 }
