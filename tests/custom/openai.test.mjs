@@ -1,5 +1,5 @@
 import { jest } from '@jest/globals';
-import { fetchRecent, store, generatePrompt } from '../src/custom/openai.mjs';
+import { fetchRecent, store, generatePrompt } from '../../src/custom/openai.mjs';
 
 const mockDb = {
     query: jest.fn(),
