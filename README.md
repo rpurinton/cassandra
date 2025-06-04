@@ -26,28 +26,42 @@ Cassandra is a Discord bot that generates creative drawing prompts for games, ar
    cd <your-repo>
    ```
 
-2. **Create your environment file:**
+2. **Set up the MySQL database:**
+   - Make sure you have MySQL installed and running.
+   - Create a new database (e.g., `cassandra`).
+   - Run the provided schema to create the required table:
+
+     ```sh
+     mysql -u <db_user> -p <db_name> < schema.sql
+     ```
+
+3. **Create your environment file:**
    - Copy `.env.example` to `.env` (if present), or create a new `.env` file:
 
      ```sh
      cp .env.example .env
      ```
 
-   - Edit `.env` and set your Discord bot token and client ID:
+   - Edit `.env` and set the following values:
 
      ```env
-     DISCORD_TOKEN=your-app-token
-     DISCORD_CLIENT_ID=your-client-id
      LOG_LEVEL=info
+     DISCORD_CLIENT_ID=your-discord-client-id
+     DISCORD_TOKEN=your-discord-bot-token
+     DB_HOST=localhost
+     DB_USER=your-db-username
+     DB_PASS=your-db-password
+     DB_NAME=cassandra
+     OPENAI_API_KEY=your-openai-api-key
      ```
 
-3. **Install dependencies:**
+4. **Install dependencies:**
 
    ```sh
    npm install
    ```
 
-4. **Run the bot:**
+5. **Run the bot:**
 
    ```sh
    node cassandra.mjs
