@@ -1,6 +1,6 @@
 {
     "name": "cassandra",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "type": "module",
     "description": "a Discord.js template supporting locales with dynamic events and /commands",
     "main": "cassandra.js",
