@@ -17,7 +17,8 @@ import { getCurrentFilename } from '../esm-filename.mjs';
  */
 export async function fetchRecent(limit = 100, { dbLib = db, logger = log } = {}) {
     try {
-        const [rows] = await dbLib.query(
+        const dbConn = await dbLib;
+        const [rows] = await dbConn.query(
             'SELECT adjective, verb, noun FROM history ORDER BY id DESC LIMIT ?',
             [limit]
         );
@@ -34,13 +35,14 @@ export async function fetchRecent(limit = 100, { dbLib = db, logger = log } = {}
  * @param {string} verb
  * @param {string} noun
  * @param {Object} options - Dependency injection options.
- * @param {Object} [options.dbLib=db] - Database library.
+ * @param {Promise<Object>} [options.dbLib=db] - Database library promise.
  * @param {Object} [options.logger=log] - Logger instance.
  * @returns {Promise<void>}
  */
 export async function store(adjective, verb, noun, { dbLib = db, logger = log } = {}) {
     try {
-        await dbLib.execute(
+        const dbConn = await dbLib;
+        await dbConn.execute(
             'INSERT INTO history (adjective, verb, noun) VALUES (?, ?, ?)',
             [adjective, verb, noun]
         );
@@ -80,7 +82,7 @@ export async function generatePrompt(
 ) {
     // Ensure locale is always a non-empty string, fallback to 'en'
     const usedLocale = (typeof locale === 'string' && locale.trim()) ? locale : 'en-US';
-    log.debug(`Generating prompt with locale: '${usedLocale}'`);
+    logger.debug(`Generating prompt with locale: '${usedLocale}'`);
     if (!openaiLib) {
         if (!process.env.OPENAI_API_KEY) {
             throw new Error('OpenAI API key is not set. Please check your .env file.');
